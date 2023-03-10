@@ -52,6 +52,7 @@ const Builder = ({ contentTypeList, setContentTypeList }) => {
         },
       );
       setContentTypeName(currentTypeName);
+      window.location.reload();
       console.log(apiResponse);
     } catch (error) {
       console.log(error);

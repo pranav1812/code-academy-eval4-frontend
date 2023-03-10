@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './style.css';
 import makeRequest from '../../utils/requests';
 import ls from 'local-storage';
@@ -125,8 +125,11 @@ const BuilderMainCard = ({
       if (apiResponse.data[0] === 1) {
         //   field.fieldName = fieldName;
         let fieldN = [...fields];
+        console.log('before splice', fieldN);
         fieldN.splice(index, 1);
+        console.log('after splice', fieldN);
         setFields(fieldN);
+        window.location.reload();
       }
       console.log(apiResponse);
     } catch (error) {
@@ -134,6 +137,7 @@ const BuilderMainCard = ({
       alert('API error: check logs to debug');
     }
   };
+  // useEffect(() => {}, [fields]);
   return (
     <div className="builder-main-card">
       <div className="builder-main-card-left">
