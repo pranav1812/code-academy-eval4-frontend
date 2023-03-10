@@ -1,3 +1,28 @@
 .home {
-  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
 }
+
+.home-sidebar {
+  width: 300px;
+  margin-right: 50px;
+}
+
+.home-main {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-main header {
+  height: 80px;
+}
+
+.home-main-container {
+  
+}
+
+
+

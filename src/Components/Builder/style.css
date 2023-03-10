@@ -1,0 +1,68 @@
+.builder {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+.builder-header {
+    height: 48px;
+    padding-top: 16px;
+    width: 100%;
+    background-color: #f5f5f5;
+    font-size: x-large;
+}
+
+.builder-main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-type-types {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding: 24px;
+}
+
+.content-type-types input {
+    width: 90%;
+    height: 40px;
+    font-size: larger;
+    padding-left: 16px;
+    border: none;
+}
+
+.typeName {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 24px;
+}
+
+.content-type-types > span {
+    height: 40px;
+    font-size: larger;
+    align-self: flex-start;
+    margin-left: 16px;
+    padding-top: 12px;
+    margin-bottom: 4px;
+}
+
+.typeName button {
+    width: 10%
+}
+
+/* .builder-main input {
+    width: 100%;
+    max-width: 500px;
+    height: 50px;
+    font-size: xx-large;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    background-color: inherit;
+} */

@@ -1,0 +1,23 @@
+.builder-main-card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 48px;
+    padding-left: 0;
+    padding-top: 16px;
+    background-color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.builder-main-card input {
+    background-color: #f5f5f5;
+    min-width: 48%;
+}
+
+.builder-main-card button {
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    margin: 0;
+    border-radius: 2px;
+}

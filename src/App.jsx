@@ -3,21 +3,22 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import { Navbar, Footer } from './Components';
 import GlobalContextProvider from './Contexts';
-import { ErrorScreen, Home } from './Pages';
+import { ErrorScreen, Home, AuthScreen } from './Pages';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      {/* <Navbar /> */}
       <GlobalContextProvider>
         <Router>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route exact path="/auth" element={<AuthScreen />} />
+            <Route path="/*" element={<Home />} />
             <Route path="error/:errorCode?" element={<ErrorScreen />} />
           </Routes>
         </Router>
       </GlobalContextProvider>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

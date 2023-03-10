@@ -1,0 +1,12 @@
+.entry-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40px;
+    min-width: 500px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid #e0e0e0;
+    box-shadow: #e0e0e0;
+    border-radius: 5px;
+}
