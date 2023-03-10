@@ -18,8 +18,8 @@
   "rules": {
     "semi": ["error", "always"],
     "quotes": ["error", "single"],
-    "no-unused-vars": "warn",
-    "no-console": "warn",
+    "no-unused-vars": "off",
+    "no-console": "off",
     "no-debugger": "warn",
     "no-undef": "warn",
     "no-constant-condition": "warn"
